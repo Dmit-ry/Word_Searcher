@@ -42,11 +42,7 @@ class Application(Frame):
         characters_to_search_string = characters_to_search_string.lower()
         characters_to_search_tuple = tuple(characters_to_search_string)
 
-        try:
-            line_length = int(self.number_char_list_ent.get())
-        except:
-            message = "Number of characters needs to be a number"
-
+        line_length = int(self.number_char_list_ent.get())
         words_found = []
         result_output_file = open("results.txt", "w")
         word_list_to_read = open("words_alpha.txt", "r")
